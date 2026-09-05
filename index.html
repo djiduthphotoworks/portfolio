@@ -7,11 +7,10 @@
 <meta name="description" content="Portfolio Muhamad Noor — Photographer, Videographer, Video Editor, DOP, dan profesional MEP dengan pengalaman lebih dari 15 tahun.">
 
 <!-- Favicon & Ikon Tab Browser -->
-<link rel="apple-touch-icon" sizes="180x180" href="asset/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="asset/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="asset/favicon-16x16.png">
-<link rel="manifest" href="asset/site.webmanifest">
-
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
 <!-- FontAwesome untuk ikon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -24,15 +23,17 @@
   <div class="container navin">
     <div class="logo">MUHAMAD <span>NOOR</span></div>
     <div class="links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" data-id="Tentang" data-en="About">Tentang</a>
+      <a href="#experience" data-id="Pengalaman" data-en="Experience">Pengalaman</a>
+      <a href="#skills" data-id="Keahlian" data-en="Skills">Keahlian</a>
+      <a href="#work" data-id="Karya" data-en="Work">Karya</a>
+      <a href="#contact" data-id="Kontak" data-en="Contact">Kontak</a>
+      
+      <!-- Tombol Ganti Bahasa (ID / EN) -->
+      <button id="langToggle" class="theme-btn" title="Ganti Bahasa / Change Language">EN</button>
+      
       <!-- Tombol Pengubah Tema (Dark / Light Mode) -->
-    <button id="themeToggle" class="theme-btn" title="Ganti Tema">
-  🌓
-</button>
+      <button id="themeToggle" class="theme-btn" title="Ganti Tema">🌓</button>
     </div>
   </div>
 </nav>
@@ -40,41 +41,41 @@
 <header class="hero">
   <div class="container hero-grid">
     <div>
-      <div class="kicker">Photographer · Videographer · Editor · DOP</div>
-      <h1>MUHAMAD<br>NOOR</h1>
-      <p>"Visual storyteller dan pendiri Djiduth Photoworks dengan pengalaman profesional di bidang fotografi, videografi, editing, 
-        dokumentasi kegiatan, serta lebih dari 15 tahun di bidang engineering Mekanikal, Elektrikal, dan Plambing (MEP)."</p>
+      <div class="kicker" data-id="Photographer · Videographer · Editor · DOP" data-en="Photographer · Videographer · Editor · DOP">Photographer · Videographer · Editor · DOP</div>
+      <h1 data-id="MUHAMAD<br>NOOR" data-en="MUHAMAD<br>NOOR">MUHAMAD<br>NOOR</h1>
+      <p data-id='"Visual storyteller dan pendiri Djiduth Photoworks dengan pengalaman profesional di bidang fotografi, videografi, editing, dokumentasi kegiatan, serta lebih dari 15 tahun di bidang engineering Mekanikal, Elektrikal, dan Plambing (MEP)."' data-en='"Visual storyteller and founder of Djiduth Photoworks with professional experience in photography, videography, editing, event documentation, and over 15 years in Mechanical, Electrical, and Plumbing (MEP) engineering."'>"Visual storyteller dan pendiri Djiduth Photoworks dengan pengalaman profesional di bidang fotografi, videografi, editing, dokumentasi kegiatan, serta lebih dari 15 tahun di bidang engineering Mekanikal, Elektrikal, dan Plambing (MEP)."</p>
       <div class="btns">
-        <a class="btn primary" href="#work">VIEW MY WORK</a>
-        <a class="btn" href="#contact">CONTACT ME</a>
+        <a class="btn primary" href="#work" data-id="LIHAT KARYA" data-en="VIEW MY WORK">LIHAT KARYA</a>
+        <a class="btn" href="#contact" data-id="HUBUNGI SAYA" data-en="CONTACT ME">HUBUNGI SAYA</a>
       </div>
     </div>
     <div class="profile-wrap">
-  <img src="asset/pas-foto.jpg" alt="Muhamad Noor" class="profile">
-</div>
+      <img src="asset/Pas foto.jpg" alt="Muhamad Noor" class="profile">
+    </div>
+  </div>
 </header>
 
 <section id="about">
 <div class="container">
-  <div class="eyebrow">01 — About</div>
-  <h2>Profesional yang<br>mengerti lapangan.</h2>
+  <div class="eyebrow" data-id="01 — Tentang" data-en="01 — About">01 — Tentang</div>
+  <h2 data-id="Profesional yang<br>mengerti lapangan." data-en="A professional who<br>understands the field.">Profesional yang<br>mengerti lapangan.</h2>
   <div class="about-grid">
     <div class="about">
-    <p>Halo! Saya <strong>Muhamad Noor</strong>, seorang <em>visual storyteller</em> dan pendiri di balik <strong>Djiduth Photoworks</strong>. Saya memiliki pengalaman profesional di bidang fotografi, videografi, <em>editing</em>, dan dokumentasi kegiatan, serta berbekal pengalaman lebih dari 15 tahun di bidang <em>engineering</em> Mekanikal – Elektrikal – Plumbing (MEP).</p><br>
-    <p>Memiliki rekam jejak kuat dalam menangani operasional gedung perkantoran, dokumentasi kegiatan pejabat tinggi Bank Indonesia, serta pengarsipan digital. Disiplin, bertanggung jawab, dan mampu bekerja mandiri maupun dalam tim.</p>
-</div>
+      <p data-id='Halo! Saya <strong>Muhamad Noor</strong>, seorang <em>visual storyteller</em> dan pendiri di balik <strong>Djiduth Photoworks</strong>. Saya memiliki pengalaman profesional di bidang fotografi, videografi, <em>editing</em>, dan dokumentasi kegiatan, serta berbekal pengalaman lebih dari 15 tahun di bidang <em>engineering</em> Mekanikal – Elektrikal – Plumbing (MEP).' data-en='Hello! I am <strong>Muhamad Noor</strong>, a <em>visual storyteller</em> and founder behind <strong>Djiduth Photoworks</strong>. I have professional experience in photography, videography, <em>editing</em>, and event documentation, along with over 15 years of experience in Mechanical – Electrical – Plumbing (MEP) <em>engineering</em>.'>Halo! Saya <strong>Muhamad Noor</strong>, seorang <em>visual storyteller</em> dan pendiri di balik <strong>Djiduth Photoworks</strong>. Saya memiliki pengalaman profesional di bidang fotografi, videografi, <em>editing</em>, dan dokumentasi kegiatan, serta berbekal pengalaman lebih dari 15 tahun di bidang <em>engineering</em> Mekanikal – Elektrikal – Plumbing (MEP).</p><br>
+      <p data-id='Memiliki rekam jejak kuat dalam menangani operasional gedung perkantoran, dokumentasi kegiatan pejabat tinggi Bank Indonesia, serta pengarsipan digital. Disiplin, bertanggung jawab, dan mampu bekerja mandiri maupun dalam tim.' data-en='Having a strong track record in managing office building operations, documenting high-ranking Bank Indonesia official activities, and digital archiving. Disciplined, responsible, and capable of working independently or in a team.'>Memiliki rekam jejak kuat dalam menangani operasional gedung perkantoran, dokumentasi kegiatan pejabat tinggi Bank Indonesia, serta pengarsipan digital. Disiplin, bertanggung jawab, dan mampu bekerja mandiri maupun dalam tim.</p>
+    </div>
     <div class="info">
       <div class="card">
-        <small>Domisili</small>
+        <small data-id="Domisili" data-en="Domicile">Domisili</small>
         <strong>
           <a href="https://www.google.com/maps/place/djiduth_photoworks/@-6.4158236,106.759873,1089m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2e69e8fb0fb076c5:0xfa7002acd22e5f58!8m2!3d-6.4158289!4d106.7624479!16s%2Fg%2F11c1sdmh5c!5m1!1e1" target="_blank">
             Sawangan — Depok 📍
           </a>
         </strong>
       </div>
-      <div class="card"><small>Pengalaman</small><strong>15+ Tahun</strong></div>
-      <div class="card"><small>Fokus Kreatif</small><strong>Photo & Video</strong></div>
-      <div class="card"><small>Spesialisasi</small><strong>MEP & Multimedia</strong></div>
+      <div class="card"><small data-id="Pengalaman" data-en="Experience">Pengalaman</small><strong>15+ <span data-id="Tahun" data-en="Years">Tahun</span></strong></div>
+      <div class="card"><small data-id="Fokus Kreatif" data-en="Creative Focus">Fokus Kreatif</small><strong>Photo & Video</strong></div>
+      <div class="card"><small data-id="Spesialisasi" data-en="Specialization">Spesialisasi</small><strong>MEP & Multimedia</strong></div>
     </div>
   </div>
 </div>
@@ -82,20 +83,19 @@
 
 <section id="experience">
 <div class="container">
-  <div class="eyebrow">02 — Experience</div>
-  <h2>Pengalaman kerja.</h2>
+  <div class="eyebrow" data-id="02 — Pengalaman" data-en="02 — Experience">02 — Pengalaman</div>
+  <h2 data-id="Pengalaman kerja." data-en="Work experience.">Pengalaman kerja.</h2>
   <div class="timeline">
-    <div class="job"><div class="year">2020 — 2022</div><div><h3>Fotografer & Videografer — Keprotokolan Bank Indonesia</h3><p>Tenaga Swakelola</p></div></div>
-    <div class="job"><div class="year">2019 — 2020</div><div><h3>Freelance Fotografer & Videografer</h3><p>Dokumentasi dan produksi visual.</p></div></div>
-    <div class="job"><div class="year">2016 — 2019</div><div><h3>PT Dana Purna Investama — Operator MEP</h3><p>Penempatan Komplek Perkantoran Bank Indonesia.</p></div></div>
-    <div class="job"><div class="year">2013 — 2016</div><div><h3>PT Jaya Teknik Indonesia — Operator MEP</h3><p>Penempatan Komplek Perkantoran Bank Indonesia.</p></div></div>
-    <div class="job"><div class="year">2006 — 2013</div><div><h3>PT Jaga Citra Inti — Teknisi MEP</h3><p>Penempatan Komplek Perkantoran Bank Indonesia.</p></div></div>
-    <div class="job"><div class="year">2002 — 2006</div><div><h3>PT Hardi Agung Perkasa — Teknisi Plumbing</h3><p>Penempatan Komplek Perkantoran Bank Indonesia.</p></div></div>
+    <div class="job"><div class="year">2020 — 2022</div><div><h3 data-id="Fotografer & Videografer — Keprotokolan Bank Indonesia" data-en="Photographer & Videographer — Bank Indonesia Protocol">Fotografer & Videografer — Keprotokolan Bank Indonesia</h3><p data-id="Tenaga Swakelola" data-en="Self-Managed Staff">Tenaga Swakelola</p></div></div>
+    <div class="job"><div class="year">2019 — 2020</div><div><h3 data-id="Freelance Fotografer & Videografer" data-en="Freelance Photographer & Videographer">Freelance Fotografer & Videografer</h3><p data-id="Dokumentasi dan produksi visual." data-en="Documentation and visual production.">Dokumentasi dan produksi visual.</p></div></div>
+    <div class="job"><div class="year">2016 — 2019</div><div><h3>PT Dana Purna Investama — <span data-id="Operator MEP" data-en="MEP Operator">Operator MEP</span></h3><p data-id="Penempatan Komplek Perkantoran Bank Indonesia." data-en="Placed at Bank Indonesia Office Complex.">Penempatan Komplek Perkantoran Bank Indonesia.</p></div></div>
+    <div class="job"><div class="year">2013 — 2016</div><div><h3>PT Jaya Teknik Indonesia — <span data-id="Operator MEP" data-en="MEP Operator">Operator MEP</span></h3><p data-id="Penempatan Komplek Perkantoran Bank Indonesia." data-en="Placed at Bank Indonesia Office Complex.">Penempatan Komplek Perkantoran Bank Indonesia.</p></div></div>
+    <div class="job"><div class="year">2006 — 2013</div><div><h3>PT Jaga Citra Inti — <span data-id="Teknisi MEP" data-en="MEP Technician">Teknisi MEP</span></h3><p data-id="Penempatan Komplek Perkantoran Bank Indonesia." data-en="Placed at Bank Indonesia Office Complex.">Penempatan Komplek Perkantoran Bank Indonesia.</p></div></div>
+    <div class="job"><div class="year">2002 — 2006</div><div><h3>PT Hardi Agung Perkasa — <span data-id="Teknisi Plumbing" data-en="Plumbing Technician">Teknisi Plumbing</span></h3><p data-id="Penempatan Komplek Perkantoran Bank Indonesia." data-en="Placed at Bank Indonesia Office Complex.">Penempatan Komplek Perkantoran Bank Indonesia.</p></div></div>
   </div>
 
-  <!-- Tombol Lihat Resume & Paklaring MEP di Bagian Bawah -->
   <div style="margin-top: 40px; text-align: left;">
-      <a href="https://drive.google.com/file/d/1Gu8WVinxc0Bx_DiQZPFsDhQTOwIZweBS/preview" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #f39c12; color: #000; font-weight: bold; text-decoration: none; border-radius: 4px; transition: 0.3s;">
+      <a href="https://drive.google.com/file/d/1Gu8WVinxc0Bx_DiQZPFsDhQTOwIZweBS/preview" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #f39c12; color: #000; font-weight: bold; text-decoration: none; border-radius: 4px; transition: 0.3s;" data-id="📄 Lihat Resume & Paklaring MEP" data-en="📄 View Resume & MEP Certificate">
           📄 Lihat Resume & Paklaring MEP
       </a>
   </div>
@@ -104,43 +104,43 @@
 
 <section id="skills">
 <div class="container">
-  <div class="eyebrow">03 — Skills</div>
-  <h2>Keahlian.</h2>
+  <div class="eyebrow" data-id="03 — Keahlian" data-en="03 — Skills">03 — Keahlian</div>
+  <h2 data-id="Keahlian." data-en="Skills.">Keahlian.</h2>
   <div class="skills">
     <div class="card skill">
-      <h3>MEP & Teknik</h3>
+      <h3 data-id="MEP & Teknik" data-en="MEP & Engineering">MEP & Teknik</h3>
       <ul>
-        <li>Instalasi & maintenance mekanikal, elektrikal & plumbing</li>
+        <li data-id="Instalasi & maintenance mekanikal, elektrikal & plumbing" data-en="Mechanical, electrical & plumbing installation & maintenance">Instalasi & maintenance mekanikal, elektrikal & plumbing</li>
         <li>Fire Alarm System</li>
         <li>Building Automation System</li>
-        <li>Troubleshooting MEP</li>
+        <li data-id="Troubleshooting MEP" data-en="MEP Troubleshooting">Troubleshooting MEP</li>
       </ul>
     </div>
     <div class="card skill">
-      <h3>Multimedia</h3>
+      <h3 data-id="Multimedia" data-en="Multimedia">Multimedia</h3>
       <ul>
-        <li>Fotografi</li>
-        <li>Videografi</li>
-        <li>Editing</li>
+        <li data-id="Fotografi" data-en="Photography">Fotografi</li>
+        <li data-id="Videografi" data-en="Videography">Videografi</li>
+        <li data-id="Editing" data-en="Editing">Editing</li>
         <li>Color Grading</li>
       </ul>
     </div>
     <div class="card skill">
-      <h3>Ringkasan Keahlian Utama</h3>
+      <h3 data-id="Ringkasan Keahlian Utama" data-en="Core Skills Summary">Ringkasan Keahlian Utama</h3>
       <ul>
         <li>MEP Troubleshooting & Preventive Maintenance</li>
         <li>Building Automation (BAS)</li>
-        <li>Protokoler & Dokumentasi Kegiatan Pejabat</li>
-        <li>Foto / Videografi Event Level Direksi</li>
-        <li>File Archiving System</li>
+        <li data-id="Protokoler & Dokumentasi Kegiatan Pejabat" data-en="Official Protocol & Event Documentation">Protokoler & Dokumentasi Kegiatan Pejabat</li>
+        <li data-id="Foto / Videografi Event Level Direksi" data-en="Board-Level Event Photo / Videography">Foto / Videografi Event Level Direksi</li>
+        <li data-id="File Archiving System" data-en="File Archiving System">File Archiving System</li>
       </ul>
     </div>
     <div class="card skill">
-      <h3>Pendidikan</h3>
+      <h3 data-id="Pendidikan" data-en="Education">Pendidikan</h3>
       <ul>
         <li><strong>SMK Jayakarta Jakarta Timur</strong></li>
-        <li>Teknik Mesin Perkakas</li>
-        <li>Lulusan Tahun 2002</li>
+        <li data-id="Teknik Mesin Perkakas" data-en="Machining Engineering">Teknik Mesin Perkakas</li>
+        <li data-id="Lulusan Tahun 2002" data-en="Graduated in 2002">Lulusan Tahun 2002</li>
       </ul>
     </div>
   </div>
@@ -149,28 +149,28 @@
 
 <section id="work">
 <div class="container">
-  <div class="eyebrow">04 — Selected Work</div>
-  <h2>Yang bisa saya kerjakan.</h2>
+  <div class="eyebrow" data-id="04 — Karya Pilihan" data-en="04 — Selected Work">04 — Karya Pilihan</div>
+  <h2 data-id="Yang bisa saya kerjakan." data-en="What I can do for you.">Yang bisa saya kerjakan.</h2>
   <div class="work-grid">
     <div class="work" onclick="window.open('https://www.instagram.com/p/DQOi2eIk--v/')" style="cursor: pointer;">
       <div class="num">01 / PHOTO</div>
-      <h3>Event Photography</h3>
-      <p>Dokumentasi event, kegiatan formal, dan momen penting.</p>
+      <h3 data-id="Event Photography" data-en="Event Photography">Event Photography</h3>
+      <p data-id="Dokumentasi event, kegiatan formal, dan momen penting." data-en="Event documentation, formal activities, and important moments.">Dokumentasi event, kegiatan formal, dan momen penting.</p>
     </div>
     <div class="work" onclick="window.open('https://drive.google.com/file/d/1qEPARNTQly6BgPoSBhaQoR6gkuq3QCog/view?usp=sharing')" style="cursor: pointer;">
       <div class="num">02 / VIDEO</div>
-      <h3>Event Videography</h3>
-      <p>Highlight, reels, dokumentasi kegiatan, dan video sosial media.</p>
+      <h3 data-id="Event Videography" data-en="Event Videography">Event Videography</h3>
+      <p data-id="Highlight, reels, dokumentasi kegiatan, dan video sosial media." data-en="Highlights, reels, activity documentation, and social media videos.">Highlight, reels, dokumentasi kegiatan, dan video sosial media.</p>
     </div>
     <div class="work" onclick="window.open('https://drive.google.com/drive/u/0/folders/1_gHwWJFOwci2Q8rApdUhbU2ku6ScFpQS?lfhs=2')" style="cursor: pointer;">
       <div class="num">03 / EDIT</div>
-      <h3>Video Editing</h3>
-      <p>Editing short-form, highlight, audio visual, dan color grading.</p>
+      <h3 data-id="Video Editing" data-en="Video Editing">Video Editing</h3>
+      <p data-id="Editing short-form, highlight, audio visual, dan color grading." data-en="Short-form editing, highlights, audio visual, and color grading.">Editing short-form, highlight, audio visual, dan color grading.</p>
     </div>
     <div class="work" onclick="window.open('https://www.youtube.com/watch?v=QYGMZ87mTvM')" style="cursor: pointer;">
       <div class="num">04 / DOP</div>
-      <h3>Production / DOP</h3>
-      <p>Camera, lighting, visual direction, dan kebutuhan produksi.</p>
+      <h3 data-id="Production / DOP" data-en="Production / DOP">Production / DOP</h3>
+      <p data-id="Camera, lighting, visual direction, dan kebutuhan produksi." data-en="Camera, lighting, visual direction, and production needs.">Camera, lighting, visual direction, dan kebutuhan produksi.</p>
     </div>
   </div>
 </div>
@@ -178,11 +178,11 @@
 
 <section id="contact" class="contact">
 <div class="container">
-  <div class="eyebrow">05 — Contact</div>
-  <h2>Let's work together.</h2>
+  <div class="eyebrow" data-id="05 — Kontak" data-en="05 — Contact">05 — Kontak</div>
+  <h2 data-id="Mari bekerja sama." data-en="Let's work together.">Mari bekerja sama.</h2>
   <div class="contact-grid">
     <div>
-      <p style="color:var(--muted);max-width:520px">Terbuka untuk project fotografi, videografi, editing, DOP, dokumentasi event, maupun kesempatan kerja profesional.</p>
+      <p style="color:var(--muted);max-width:520px" data-id="Terbuka untuk project fotografi, videografi, editing, DOP, dokumentasi event, maupun kesempatan kerja profesional." data-en="Open for photography, videography, editing, DOP projects, event documentation, and professional career opportunities.">Terbuka untuk project fotografi, videografi, editing, DOP, dokumentasi event, maupun kesempatan kerja profesional.</p>
     </div>
     <div>
       <div>
@@ -198,7 +198,7 @@
 </section>
 
 <footer>
-  <div class="container">© 2026 Muhamad Noor. Photographer · Videographer · Editor · DOP.</div>
+  <div class="container" data-id="© 2026 Muhamad Noor. Photographer · Videographer · Editor · DOP." data-en="© 2026 Muhamad Noor. Photographer · Videographer · Editor · DOP.">© 2026 Muhamad Noor. Photographer · Videographer · Editor · DOP.</div>
 </footer>
 
 <!-- Tombol Panah Naik (Scroll to Top) -->

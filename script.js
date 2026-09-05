@@ -1,34 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // 1. Logika Dark Mode / Light Mode Toggle
+    // 1. Logika Dark Mode / Light Mode Toggle (Versi Simpel & Aman)
     const themeToggleBtn = document.getElementById("themeToggle");
-    
+    const bodyElement = document.body;
+
+    // Cek memori tema sebelumnya
+    if (localStorage.getItem("theme") === "light") {
+        bodyElement.classList.add("light-mode");
+    }
+
     if (themeToggleBtn) {
-        const bodyElement = document.body;
-        const themeIcon = themeToggleBtn.querySelector("i");
-
-        // Periksa memori browser (apakah user sebelumnya memilih mode terang)
-        if (localStorage.getItem("theme") === "light") {
-            bodyElement.classList.add("light-mode");
-            if (themeIcon) {
-                themeIcon.classList.remove("fa-moon");
-                themeIcon.classList.add("fa-sun");
-            }
-        }
-
         themeToggleBtn.addEventListener("click", function() {
             bodyElement.classList.toggle("light-mode");
             
+            // Simpan status ke localStorage
             if (bodyElement.classList.contains("light-mode")) {
-                if (themeIcon) {
-                    themeIcon.classList.remove("fa-moon");
-                    themeIcon.classList.add("fa-sun");
-                }
                 localStorage.setItem("theme", "light");
             } else {
-                if (themeIcon) {
-                    themeIcon.classList.remove("fa-sun");
-                    themeIcon.classList.add("fa-moon");
-                }
                 localStorage.setItem("theme", "dark");
             }
         });

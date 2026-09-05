@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // 1. Logika Dark Mode / Light Mode Toggle (Versi Simpel & Aman)
+    // 1. Logika Dark Mode / Light Mode Toggle
     const themeToggleBtn = document.getElementById("themeToggle");
     const bodyElement = document.body;
 
-    // Cek memori tema sebelumnya
     if (localStorage.getItem("theme") === "light") {
         bodyElement.classList.add("light-mode");
     }
@@ -12,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
         themeToggleBtn.addEventListener("click", function() {
             bodyElement.classList.toggle("light-mode");
             
-            // Simpan status ke localStorage
             if (bodyElement.classList.contains("light-mode")) {
                 localStorage.setItem("theme", "light");
             } else {
@@ -21,7 +19,35 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // 2. Logika Tombol Panah Naik (Scroll to Top)
+    // 2. Logika Ganti Bahasa (ID / EN)
+    const langToggleBtn = document.getElementById("langToggle");
+    let currentLang = localStorage.getItem("lang") || "id";
+
+    function setLanguage(lang) {
+        const elements = document.querySelectorAll("[data-id]");
+        elements.forEach(el => {
+            if (lang === "en") {
+                el.innerHTML = el.getAttribute("data-en");
+            } else {
+                el.innerHTML = el.getAttribute("data-id");
+            }
+        });
+        if (langToggleBtn) {
+            langToggleBtn.textContent = lang === "en" ? "ID" : "EN";
+        }
+        localStorage.setItem("lang", lang);
+    }
+
+    setLanguage(currentLang);
+
+    if (langToggleBtn) {
+        langToggleBtn.addEventListener("click", function() {
+            currentLang = currentLang === "id" ? "en" : "id";
+            setLanguage(currentLang);
+        });
+    }
+
+    // 3. Logika Tombol Panah Naik (Scroll to Top)
     const scrollTopBtn = document.getElementById("scrollToTopBtn");
 
     if (scrollTopBtn) {

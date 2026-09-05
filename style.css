@@ -1,16 +1,18 @@
 /* 1. Default Utama (Mode Terang / Light Mode) */
+/* 1. Default Utama (Mode Terang / Light Mode) */
 :root {
-  --bg: #f7f6f2;         /* Pakai warna solid pastel hangat, bukan gradient */
+  --bg: #f7f6f2;
   --bg-gradient: linear-gradient(135deg, #f7f6f2 0%, #eef2ed 50%, #f4f0ec 100%);
-  --panel: #ffffff;      
-  --text: #2c2d2d;       
-  --muted: #6e7275;      
-  --gold: #5b7065;       
+  --panel: #ffffff;
+  --text: #2c2d2d;
+  --muted: #6e7275;
+  --gold: #5b7065;
   --line: rgba(44, 45, 45, 0.12);
 }
 
-/* 2. Mode Gelap (Dark Mode) ketika tombol diklik atau diaktifkan */
-body.dark-mode {
+/* 2. Ketika tombol diklik, kelas .light-mode / .dark-mode aktif */
+/* Jika script JS kamu menggunakan logika .light-mode untuk mengubah ke gelap: */
+body.light-mode {
   --bg: #111417;
   --bg-gradient: #111417;
   --panel: #1a1e23;
@@ -20,19 +22,11 @@ body.dark-mode {
   --line: rgba(255, 255, 255, 0.1);
 }
 
-/* Terapkan variabel --bg ke background utama halaman */
+/* Terapkan ke body */
 body {
   background: var(--bg);
   color: var(--text);
-}
-/* Pengaturan untuk Mode Gelap / Alternatif */
-body.light-mode {
-  --bg: #1c211f;
-  --panel: #262c29;
-  --text: #f0f4f2;
-  --muted: #a3b1a8;
-  --gold: #82a393;
-  --line: rgba(255, 255, 255, 0.12);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -189,7 +183,5 @@ footer { padding: 30px 0; color: var(--muted); font-size: 13px; border-top: 1px 
   .btns { justify-content: center; }
   .skills, .work-grid { grid-template-columns: 1fr; }
   .job { grid-template-columns: 1fr; gap: 5px; }
-  h1 { letter-spacing: -3px; }
-}
   h1 { letter-spacing: -3px; }
 }
